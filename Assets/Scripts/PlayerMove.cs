@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour {
 
-	public float Health = 100.0F;
+	public float healthAmount = 100.0F;
 
 	protected Vector3 moveDirection;
 	protected Transform transformer;
