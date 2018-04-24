@@ -13,18 +13,13 @@ public class PlayerMove : MonoBehaviour {
 	void Start()
 	{
 		transformer = GetComponent<Transform>();
+		render = GetComponent<SpriteRenderer>();
 	}
 	void Update()
 	{	
-		//debug stuff
-
-		Debug.Log(Input.GetAxisRaw("Horizontal"));
-
-		//end debug stuff
-
 		//reset transform
 		moveDirection.x = 0;
-		//apply gravity
+		//apply gravity to the transform
 		if (Physics2D.Raycast(transformer.position, Vector2.down, 2.2F))
 		{
 			moveDirection.y = 0;
@@ -60,11 +55,16 @@ public class PlayerMove : MonoBehaviour {
 			}
 		}
 		//get jump input
-		if (Input.GetButton("Jump") && Physics2D.Raycast(transformer.position, Vector2.down, 2.3F	))
+		if (Input.GetButton("Jump") && Physics2D.Raycast(transformer.position, Vector2.down, 2.3F))
 		{
 			moveDirection.y = 1;
 		}
-		//move the transform
+		//check for head collisions.
+		if (Physics2D.Raycast(transformer.position, Vector2.up, 2.2F))
+		{
+			moveDirection.y = -.25F;
+		}
+		//apply the transform
 		transformer.position+=moveDirection;
 	}	
 }
