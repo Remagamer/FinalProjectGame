@@ -8,6 +8,7 @@ public class PlayerMove : MonoBehaviour {
 
 	protected Vector3 moveDirection;
 	protected Transform transformer;
+	protected SpriteRenderer render;
 	
 	void Start()
 	{
@@ -15,10 +16,16 @@ public class PlayerMove : MonoBehaviour {
 	}
 	void Update()
 	{	
+		//debug stuff
+
+		Debug.Log(Input.GetAxisRaw("Horizontal"));
+
+		//end debug stuff
+
 		//reset transform
 		moveDirection.x = 0;
 		//apply gravity
-		if (Physics2D.Raycast(transformer.position, Vector2.down, .8F))
+		if (Physics2D.Raycast(transformer.position, Vector2.down, 2.2F))
 		{
 			moveDirection.y = 0;
 		}
@@ -26,33 +33,36 @@ public class PlayerMove : MonoBehaviour {
 		{
 			moveDirection.y-= .05F;
 		}
-		//get inputs
-		if (Input.GetAxis("Horizontal") > 0)
+		//get inputsF
+		if (Input.GetAxisRaw("Horizontal") == 1)
 		{
-			if (Physics2D.Raycast(transformer.position, Vector2.right, .5F))
+			if (Physics2D.Raycast(transformer.position, Vector2.right, 2.2F))
       	    {
 				moveDirection.x = 0;
     	    }
 			else
 			{
 				moveDirection.x = .5F;
+				render.flipX = false;
 			}
 		}
-		if (Input.GetAxis("Horizontal") < 0)
+		if (Input.GetAxisRaw("Horizontal") == -1)
 		{
-			if (Physics2D.Raycast(transformer.position, Vector2.left, .5F))
+			if (Physics2D.Raycast(transformer.position, Vector2.left, 2.2F))
       	    {
 				moveDirection.x = 0;
     	    }
 			else
 			{
 				moveDirection.x = -.5F;
+				render.flipX = true;
+
 			}
 		}
 		//get jump input
-		if (Input.GetButton("Jump") && Physics2D.Raycast(transformer.position, Vector2.down, 1))
+		if (Input.GetButton("Jump") && Physics2D.Raycast(transformer.position, Vector2.down, 2.3F	))
 		{
-			moveDirection.y = .5F;
+			moveDirection.y = 1;
 		}
 		//move the transform
 		transformer.position+=moveDirection;
