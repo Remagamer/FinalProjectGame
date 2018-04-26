@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour {
 
-	//on trigger enter stuff.
-	void OnTriggerEnter(Collider other)
-	{
-		//other.healthAmount -=1;
-		Destroy(this);
-	}
+    void OnTriggerEnter(Collider other) {
+        Debug.Log("Collision detected!");
+    }
 }

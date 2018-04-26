@@ -66,5 +66,8 @@ public class PlayerMove : MonoBehaviour {
 		}
 		//apply the transform
 		transformer.position+=moveDirection;
+
+		
 	}	
+
 }
