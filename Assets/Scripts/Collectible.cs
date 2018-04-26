@@ -5,6 +5,7 @@ using UnityEngine;
 public class Collectible : MonoBehaviour {
 
     void OnTriggerEnter(Collider other) {
-        Debug.Log("Collision detected!");
+        //Debug.Log("Collision detected!");
+        print("Collision detected!");
     }
 }

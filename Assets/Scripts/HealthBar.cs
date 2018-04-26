@@ -17,7 +17,7 @@ public class HealthBar : MonoBehaviour {
 		//put something in the thingus.
 		imager = GetComponent<Image>();
 		//do the other stuff for the other things.
-		health = GameObject.Find("Guy").GetComponent<PlayerMove>().healthAmount;
+		health = GameObject.Find("Guy").GetComponent<PlayerMove2>().healthAmount;
 	}
 	
 	// Update is called once per frame
