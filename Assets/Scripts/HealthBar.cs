@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//just a quick memorial for my broken keyboard that has hindered me endlessly throughout the rebuild of this game
+// X and C you guys are dirt bags!!!
+
 public class HealthBar : MonoBehaviour {
 
 	//set up the dang thingus.
