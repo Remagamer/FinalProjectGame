@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Old Broken Stuff\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\Old Broken Stuff\PlayerMove2.cs" />
+     <Compile Include="Assets\Scripts\Pauser.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\Time.cs" />
      <Compile Include="Assets\Scripts\Working ScriptableObject Stuff\StatsBase.cs" />
