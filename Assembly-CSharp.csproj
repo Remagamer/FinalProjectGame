@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Old Broken Stuff\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\Old Broken Stuff\PlayerMove2.cs" />
+     <Compile Include="Assets\Scripts\PlayerMove2.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\Time.cs" />
  <Reference Include="UnityEngine.UI">

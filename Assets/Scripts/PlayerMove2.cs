@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMove2 : MonoBehaviour {
+public class PlayerMove2Legacy : MonoBehaviour {
 
 	public float healthAmount = 100.0F;
 
