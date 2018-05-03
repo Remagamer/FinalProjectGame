@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour {
 	
 	//lay out our stuff
-	public CharacterController Control1;
-	public ScriptableObject Stats;
+	private CharacterController Control1;
+	public Script Stats;
 	//lay out the vector3 to move with
 	private Vector3 Movement;
 
@@ -14,8 +14,8 @@ public class PlayerScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//get it in place.
+		Stats = GetComponent<Script>();
 		Control1 = GetComponent<CharacterController>();
-		Stats = GetComponent<ScriptableObject>();
 	}
 	
 	// Update is called once per frame
@@ -31,8 +31,8 @@ public class PlayerScript : MonoBehaviour {
 			Movement.y -= 1;
 		}
 		//apply the stats.
-		Movement.x *= Stats.Speed; 
-		Movement.y *= Stats.Jump;
+		//Movement.x *= Stats.Speed; 
+		//Movement.y *= Stats.Jump;
 		//apply the Movement.
 		Control1.Move(Movement);
 	}
