@@ -9,13 +9,6 @@ public class Pauser : MonoBehaviour {
 		//this is the while loop to fill the quota.
 		if (Input.GetButton("Cancel"))
 		{
-			while(true)
-			{
-				if (Input.GetButton("Cancel"))
-				{
-					break;
-				}
-			}
 		}
 	}
 }
