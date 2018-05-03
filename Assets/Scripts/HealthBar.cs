@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour {
 
 	//set up the dang thingus.
-	protected Image imager;
+	private Image imager;
+	private PlayerScript script;
 	//set up other things.
-	protected int health;
+	protected float health;
 
 
 
@@ -16,12 +17,14 @@ public class HealthBar : MonoBehaviour {
 	void Start () {
 		//put something in the thingus.
 		imager = GetComponent<Image>();
+		script = GameObject.Find("Player").GetComponent<PlayerScript>();
 		//do the other stuff for the other things.
-		//health = GameObject.Find("Player").UIHP;
+		health = script.Health;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		imager.fillAmount = health / 100;
+		health = script.Health;
+		imager.fillAmount = health;
 	}
 }
