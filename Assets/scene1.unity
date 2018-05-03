@@ -400,8 +400,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Stats: {fileID: 11400000, guid: f5c515d2fc9678e4c8fd202387b6d6bb, type: 2}
   Health: 1
-  Speed: 1
-  Jump: 5
+  Speed: 0.5
+  Gravity: 0.05
+  Jump: 1
 --- !u!1 &1747109884
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,7 +696,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1980220889
+  randomSeed: 1146506653
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4021,7 +4022,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1981615699}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0.27872467, z: -6}
+  m_LocalPosition: {x: 0.2, y: 0.27872467, z: -9.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1615699364}

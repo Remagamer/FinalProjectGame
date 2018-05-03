@@ -11,8 +11,9 @@ public class PlayerScript : MonoBehaviour {
 	private Vector3 Movement;
 	//I spent two hours trying to put this into a scriptableobject but nothing can get into it no matter what I do and that's beans man
 	public float Health = 1;
-	public int Speed = 1;
-	public int Jump = 5;
+	public float Speed = 1;
+	public float Gravity = 3;
+	public float Jump = 2;
 
 
 	// Use this for initialization
@@ -25,17 +26,23 @@ public class PlayerScript : MonoBehaviour {
 	void Update () {
 		//clean the Movement.
 		Movement.x = 0;
+		//get movement.
+		Movement.x = Input.GetAxis("Horizontal");
 		//check gravity.
 		if (Control1.isGrounded) {
 			Movement.y = 0;
+			//get jump.
+			if (Input.GetButton("Jump"))
+			{
+				Movement.y = Jump;
+			}
 		}
 		else
 		{
-			Movement.y -= .01F;
+			Movement.y -= Gravity;
 		}
 		//apply the stats.
 		Movement.x *= Speed; 
-		Movement.y *= Jump;
 		//apply the Movement.
 		Control1.Move(Movement);
 	}
