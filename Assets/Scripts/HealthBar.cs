@@ -9,7 +9,7 @@ public class HealthBar : MonoBehaviour {
 	private Image imager;
 	private PlayerScript script;
 	//set up other things.
-	protected float health;
+	private float health;
 
 
 
