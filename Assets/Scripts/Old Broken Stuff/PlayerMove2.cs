@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,7 +29,7 @@ public class PlayerMove2 : MonoBehaviour {
 		//get jump input
 		if (Input.GetButton("Jump") && Physics2D.Raycast(transform.position, Vector2.down, 2.2F))
 		{
-			moveDirection.y = 200xx;
+			moveDirection.y = 200;
 		}
 		//apply the transform
 		box.AddForce(moveDirection);
