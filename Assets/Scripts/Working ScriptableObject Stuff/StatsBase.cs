@@ -6,7 +6,7 @@ using UnityEngine;
 public class StatsBase : ScriptableObject {
 
 	//the stats.
-	public int Speed = 1;
-	public int Jump = 5;
-	public int Health = 1;
+	public int speed = 1;
+	public int jump = 5;
+	public int health = 1;
 }

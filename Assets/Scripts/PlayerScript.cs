@@ -9,15 +9,16 @@ public class PlayerScript : MonoBehaviour {
 	public ScriptableObject Stats;
 	//lay out the vector3 to move with
 	private Vector3 Movement;
-	//public HP thing because unity is a funky mess compared to what I normally use
-	public int UIHP;
+	//I spent two hours trying to put this into a scriptableobject but nothing can get into it no matter what I do and that's beans man
+	public float Health = 1;
+	public int Speed = 1;
+	public int Jump = 5;
+
 
 	// Use this for initialization
 	void Start () {
 		//get it in place.
-		Stats = GetComponent<ScriptableObject>();
 		Control1 = GetComponent<CharacterController>();
-		UIHP = GetComponent<ScriptableObject>().Health;
 	}
 	
 	// Update is called once per frame
@@ -30,11 +31,11 @@ public class PlayerScript : MonoBehaviour {
 		}
 		else
 		{
-			Movement.y -= 1;
+			Movement.y -= .01F;
 		}
 		//apply the stats.
-		//Movement.x *= Stats.Speed; 
-		//Movement.y *= Stats.Jump;
+		Movement.x *= Speed; 
+		Movement.y *= Jump;
 		//apply the Movement.
 		Control1.Move(Movement);
 	}
