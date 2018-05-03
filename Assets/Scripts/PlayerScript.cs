@@ -6,16 +6,18 @@ public class PlayerScript : MonoBehaviour {
 	
 	//lay out our stuff
 	private CharacterController Control1;
-	public Script Stats;
+	public ScriptableObject Stats;
 	//lay out the vector3 to move with
 	private Vector3 Movement;
-
+	//public HP thing because unity is a funky mess compared to what I normally use
+	public int UIHP;
 
 	// Use this for initialization
 	void Start () {
 		//get it in place.
-		Stats = GetComponent<Script>();
+		Stats = GetComponent<ScriptableObject>();
 		Control1 = GetComponent<CharacterController>();
+		UIHP = GetComponent<ScriptableObject>().Health;
 	}
 	
 	// Update is called once per frame

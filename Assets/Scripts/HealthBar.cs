@@ -8,7 +8,7 @@ public class HealthBar : MonoBehaviour {
 	//set up the dang thingus.
 	protected Image imager;
 	//set up other things.
-	protected float health;
+	protected int health;
 
 
 
@@ -17,7 +17,7 @@ public class HealthBar : MonoBehaviour {
 		//put something in the thingus.
 		imager = GetComponent<Image>();
 		//do the other stuff for the other things.
-		health = GameObject.Find("Player").GetComponent<PlayerScript>().Stats.;
+		health = GameObject.Find("Player").UIHP;
 	}
 	
 	// Update is called once per frame

@@ -8,4 +8,5 @@ public class StatsBase : ScriptableObject {
 	//the stats.
 	public int Speed = 1;
 	public int Jump = 5;
+	public int Health = 1;
 }
