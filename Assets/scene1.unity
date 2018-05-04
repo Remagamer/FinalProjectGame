@@ -441,10 +441,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Stats: {fileID: 11400000, guid: f5c515d2fc9678e4c8fd202387b6d6bb, type: 2}
-  Health: 1
-  Speed: 0.5
-  Gravity: 0.05
-  Jump: 1
+  Statlist:
+  - 1
+  - 1.5
+  - 0.1
+  - 1
+  - 0
+  Keylist: []
 --- !u!1 &1710140837
 GameObject:
   m_ObjectHideFlags: 0

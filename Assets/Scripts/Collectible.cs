@@ -14,7 +14,7 @@ public class Collectible : MonoBehaviour {
         //change stats.
         script = other.GetComponent<PlayerScript>();
         //stat changes.
-        for (int value = 0 ; value < 5; value++)
+        for (int value = 0 ; value < 4; value++)
         {
             //do the thing.
             script.Statlist[value] += Statlist[value];

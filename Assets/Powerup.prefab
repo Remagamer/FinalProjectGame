@@ -96,10 +96,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script: {fileID: 0}
-  HP: -0.5
-  JMP: 0
-  GRAV: 0
-  SPD: 0
+  Statlist:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!136 &136857171192317372
 CapsuleCollider:
   m_ObjectHideFlags: 1

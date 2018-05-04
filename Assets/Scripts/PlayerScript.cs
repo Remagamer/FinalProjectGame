@@ -11,11 +11,11 @@ public class PlayerScript : MonoBehaviour {
 	private Vector3 Movement;
 	//I spent two hours trying to put this into a scriptableobject but nothing can get into it no matter what I do and that's beans man
 	public List<float> Statlist;
-	//1 is speed,
-	//2 is jump,
-	//3 is gravity,
-	//4 is health,
-	//5 is score.
+	//0 is speed,
+	//1 is jump,
+	//2 is gravity,
+	//3 is health,
+	//4 is score.
 
 	//the list that holds 3 keys.
 	public List<string> Keylist;
@@ -38,15 +38,15 @@ public class PlayerScript : MonoBehaviour {
 			//get jump.
 			if (Input.GetButton("Jump"))
 			{
-				Movement.y = Statlist[2];
+				Movement.y = Statlist[1];
 			}
 		}
 		else
 		{
-			Movement.y -= Statlist[3];
+			Movement.y -= Statlist[2];
 		}
 		//apply the stats.
-		Movement.x *= Statlist[1]; 
+		Movement.x *= Statlist[0]; 
 		//apply the Movement.
 		Control1.Move(Movement);
 	}
