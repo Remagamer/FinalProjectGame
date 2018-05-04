@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Key : MonoBehaviour {
 
-    public PlayerScript script;
+    public PlayerScript scripto;
 
-	private KeyBase key;
+	public ScriptableObject key;
 
     void OnTriggerEnter(Collider other) {
 
-        script = other.GetComponent<PlayerScript>();
+        scripto = other.GetComponent<PlayerScript>();
 
-		script.Keylist.Add(key.GetColor());
+		scripto.Keylist.Add(key.color);
 
         Destroy(gameObject);
     }

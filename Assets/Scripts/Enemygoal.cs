@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemygoal : MonoBehaviour {
 
     private Transform goal;
+    private UnityEngine.AI.NavMeshAgent agent;
        
     void Start () {
           UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -12,6 +13,6 @@ public class Enemygoal : MonoBehaviour {
 	}
 
 	void Update () {
-		agent.destination = GameObject.Find("Player").GetComponent<Transform>();
+		agent.destination = GameObject.Find("Player").GetComponent<Transform>().position;
 	}
 }
