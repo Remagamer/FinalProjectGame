@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Old Broken Stuff\PlayerMove2.cs" />
      <Compile Include="Assets\Scripts\Pauser.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
+     <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\Time.cs" />
      <Compile Include="Assets\Scripts\Working ScriptableObject Stuff\KeyBase.cs" />
  <Reference Include="UnityEngine.UI">
