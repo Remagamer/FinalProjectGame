@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Broken 2D Stuff\StatsBase.cs" />
      <Compile Include="Assets\Scripts\Collectible.cs" />
+     <Compile Include="Assets\Scripts\Enemygoal.cs" />
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Old Broken Stuff\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\Old Broken Stuff\PlayerMove2.cs" />
