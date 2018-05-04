@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Key : MonoBehaviour {
 
-    public PlayerScript scripto;
+    private PlayerScript scripto;
 
 	public Key key;
 
@@ -15,7 +15,7 @@ public class Key : MonoBehaviour {
 
         scripto = other.GetComponent<PlayerScript>();
 
-		//scripto.Keylist.Add(key.color);
+		//scripto.Keylist.Add(key.GetColor());
 
         Destroy(gameObject);
     }

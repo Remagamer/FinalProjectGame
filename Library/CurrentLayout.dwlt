@@ -106,8 +106,8 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 911, y: 371}
-  m_MaxSize: {x: 22006, y: 14021}
+  m_MinSize: {x: 913, y: 371}
+  m_MaxSize: {x: 22008, y: 14021}
   vertical: 1
   controlID: 31
 --- !u!114 &6
@@ -132,8 +132,8 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 453
-  m_MinSize: {x: 911, y: 271}
-  m_MaxSize: {x: 22006, y: 10021}
+  m_MinSize: {x: 913, y: 271}
+  m_MaxSize: {x: 22008, y: 10021}
   vertical: 0
   controlID: 32
 --- !u!114 &7
@@ -232,8 +232,8 @@ MonoBehaviour:
     y: 0
     width: 280
     height: 453
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -403,9 +403,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 21.375858, y: -99.24311, z: -10.885212}
+    m_Target: {x: 45.75168, y: -74.87, z: -10.5390625}
     speed: 2
-    m_Value: {x: 21.375858, y: -99.24311, z: -10.885212}
+    m_Value: {x: 45.75168, y: -74.87, z: -10.5390625}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -433,15 +433,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 85.65386
+    m_Target: 51.615963
     speed: 2
-    m_Value: 85.65386
+    m_Value: 51.615963
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: 0.13273366, y: -0.76136124, z: 0.16491473, w: 0.6127919}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -519,9 +519,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a2280000
-    m_LastClickedID: 10402
-    m_ExpandedIDs: 86fbffff00000000
+    m_SelectedIDs: 32070000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -615,20 +615,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Working ScriptableObject Stuff
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Working ScriptableObject Stuff
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\remag\Desktop\GitRepos\DGM1600Spring2018\Final Project
     Game
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a2270000
-    m_LastClickedID: 10146
-    m_ExpandedIDs: 000000007a270000a0270000a227000000ca9a3bffffff7f
+    m_SelectedIDs: 9e270000
+    m_LastClickedID: 10142
+    m_ExpandedIDs: 00000000782700009e270000a027000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -656,7 +656,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007a270000a0270000a2270000
+    m_ExpandedIDs: 00000000782700009e270000a0270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -695,7 +695,7 @@ MonoBehaviour:
         y: 0
         width: 0
         height: 0
-      m_UserData: 10564
+      m_UserData: 1842
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -738,7 +738,7 @@ MonoBehaviour:
     width: 278
     height: 432
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 470.95508}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: -160
