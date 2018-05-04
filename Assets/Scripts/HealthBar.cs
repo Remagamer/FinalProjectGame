@@ -27,7 +27,7 @@ public class HealthBar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		health = script.Statlist[4];
+		health = script.Statlist[3];
 		imager.fillAmount = health;
 	}
 }
