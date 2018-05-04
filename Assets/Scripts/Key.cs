@@ -6,7 +6,8 @@ public class Key : MonoBehaviour {
 
     private PlayerScript scripto;
 
-	public Key key;
+    //this would be in a scriptable object but they're impenetrable vaults of untouchability. I don't understand how to get things in or out of them.
+	public string color;
 
 	void Start() {
 		
@@ -15,7 +16,7 @@ public class Key : MonoBehaviour {
 
         scripto = other.GetComponent<PlayerScript>();
 
-		//scripto.Keylist.Add(key.GetColor());
+		scripto.Keylist.Add(color);
 
         Destroy(gameObject);
     }
