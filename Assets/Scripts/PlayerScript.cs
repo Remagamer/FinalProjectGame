@@ -50,4 +50,4 @@ public class PlayerScript : MonoBehaviour {
 		//apply the Movement.
 		Control1.Move(Movement);
 	}
-}
+} 

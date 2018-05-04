@@ -22,12 +22,12 @@ public class HealthBar : MonoBehaviour {
 		imager = GetComponent<Image>();
 		script = GameObject.Find("Player").GetComponent<PlayerScript>();
 		//do the other stuff for the other things.
-		health = script.Health;
+		health = script.Statlist[4];
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		health = script.Health;
+		health = script.Statlist[4];
 		imager.fillAmount = health;
 	}
 }

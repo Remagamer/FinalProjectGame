@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Broken 2D Stuff\StatsBase.cs" />
      <Compile Include="Assets\Scripts\Collectible.cs" />
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Old Broken Stuff\PlayerMove.cs" />
@@ -58,7 +59,7 @@
      <Compile Include="Assets\Scripts\Pauser.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\Time.cs" />
-     <Compile Include="Assets\Scripts\Working ScriptableObject Stuff\StatsBase.cs" />
+     <Compile Include="Assets\Scripts\Working ScriptableObject Stuff\KeyBase.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
