@@ -6,22 +6,24 @@ public class Collectible : MonoBehaviour {
 
     public PlayerScript script;
     //stat changes.
-    public float HP = 0;
-    public float JMP = 0;
-    public float GRAV = 0;
-    public float SPD = 0;
-
+    public List<float> Statlist;
 
     void OnTriggerEnter(Collider other) {
         //Debug.Log("Collision detected!");
 
         //change stats.
         script = other.GetComponent<PlayerScript>();
-        script.Health += HP;
-	    script.Speed += SPD;
-	    script.Gravity += GRAV;
-	    script.Jump += JMP;
-        //kill the object.xxxxxxxxxxxxxxxxx
+        //stat changes.
+        for (int value = 0 ; value < 4; value++)
+        {
+            //do the thing.
+            script.Statlist[value] += Statlist[value];
+        }
+        //script.Health += HP;
+	    //script.Speed += SPD;
+	    //script.Gravity += GRAV;
+	    //script.Jump += JMP;
+        //kill the object.
         Destroy(gameObject);
     }
 
