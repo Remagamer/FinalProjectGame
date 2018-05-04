@@ -8,7 +8,7 @@ public class Enemygoal : MonoBehaviour {
     private UnityEngine.AI.NavMeshAgent agent;
        
     void Start () {
-          UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+          agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
           agent.destination = GameObject.Find("Player").GetComponent<Transform>().position; 
 	}
 

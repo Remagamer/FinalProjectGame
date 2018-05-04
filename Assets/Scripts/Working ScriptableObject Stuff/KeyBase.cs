@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class KeyBase : ScriptableObject {
+abstract class KeyBase : Key {
 
 	//the color of the key.
 	public string color;

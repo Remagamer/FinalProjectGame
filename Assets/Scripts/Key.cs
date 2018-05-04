@@ -6,13 +6,16 @@ public class Key : MonoBehaviour {
 
     public PlayerScript scripto;
 
-	public ScriptableObject key;
+	public Key key;
 
+	void Start() {
+		
+	}
     void OnTriggerEnter(Collider other) {
 
         scripto = other.GetComponent<PlayerScript>();
 
-		scripto.Keylist.Add(key.color);
+		//scripto.Keylist.Add(key.color);
 
         Destroy(gameObject);
     }
