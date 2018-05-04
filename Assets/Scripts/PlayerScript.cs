@@ -10,11 +10,12 @@ public class PlayerScript : MonoBehaviour {
 	//lay out the vector3 to move with
 	private Vector3 Movement;
 	//I spent two hours trying to put this into a scriptableobject but nothing can get into it no matter what I do and that's beans man
-	public float Health = 1;
-	public float Speed = 1;
-	public float Gravity = 3;
-	public float Jump = 2;
-
+	public List<float> Statlist;
+	//1 is speed,
+	//2 is jump,
+	//3 is gravity,
+	//4 is health,
+	//5 is score.
 
 	// Use this for initialization
 	void Start () {
@@ -34,15 +35,15 @@ public class PlayerScript : MonoBehaviour {
 			//get jump.
 			if (Input.GetButton("Jump"))
 			{
-				Movement.y = Jump;
+				Movement.y = Statlist[2];
 			}
 		}
 		else
 		{
-			Movement.y -= Gravity;
+			Movement.y -= Statlist[3];
 		}
 		//apply the stats.
-		Movement.x *= Speed; 
+		Movement.x *= Statlist[1]; 
 		//apply the Movement.
 		Control1.Move(Movement);
 	}
