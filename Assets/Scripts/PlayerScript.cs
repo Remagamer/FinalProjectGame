@@ -17,6 +17,9 @@ public class PlayerScript : MonoBehaviour {
 	//4 is health,
 	//5 is score.
 
+	//the list that holds 3 keys.
+	public List<string> Keylist;
+
 	// Use this for initialization
 	void Start () {
 		//get it in place.
