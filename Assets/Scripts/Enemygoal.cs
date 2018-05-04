@@ -12,6 +12,6 @@ public class Enemygoal : MonoBehaviour {
 	}
 
 	void Update () {
-		goal = GameObject.Find("Player").GetComponent<Transform>();
+		agent.destination = GameObject.Find("Player").GetComponent<Transform>();
 	}
 }

@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Collectible.cs" />
      <Compile Include="Assets\Scripts\Enemygoal.cs" />
      <Compile Include="Assets\Scripts\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\Key.cs" />
      <Compile Include="Assets\Scripts\Old Broken Stuff\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\Old Broken Stuff\PlayerMove2.cs" />
      <Compile Include="Assets\Scripts\Pauser.cs" />
